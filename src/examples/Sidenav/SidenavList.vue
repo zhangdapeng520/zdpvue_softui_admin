@@ -5,90 +5,56 @@
   >
     <ul class="navbar-nav">
       <li class="nav-item">
-        <sidenav-collapse navText="Dashboard" :to="{ name: 'Dashboard' }">
+        <sidenav-collapse navText="面板" :to="{ name: 'Dashboard' }">
           <template #icon>
             <shop />
           </template>
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Tables" :to="{ name: 'Tables' }">
+        <sidenav-collapse navText="表格" :to="{ name: 'Tables' }">
           <template #icon>
             <office />
           </template>
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Billing" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="财务" :to="{ name: 'Billing' }">
           <template #icon>
             <credit-card />
           </template>
         </sidenav-collapse>
       </li>
 
-      <li class="nav-item">
-        <sidenav-collapse
-          navText="Virtual Reality"
-          :to="{ name: 'Virtual Reality' }"
-        >
-          <template #icon>
-            <box3d />
-          </template>
-        </sidenav-collapse>
-      </li>
-      <li class="nav-item">
-        <sidenav-collapse navText="RTL" :to="{ name: 'Rtl' }">
-          <template #icon>
-            <settings />
-          </template>
-        </sidenav-collapse>
-      </li>
       <li class="mt-3 nav-item">
         <h6
-          class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
-          :class="this.$store.state.isRTL ? 'me-4' : 'ms-2'"
+          class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6 ms-2"
         >
-          PAGES
+          示例页面
         </h6>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Profile" :to="{ name: 'Profile' }">
+        <sidenav-collapse navText="个人中心" :to="{ name: 'Profile' }">
           <template #icon>
             <customer-support />
           </template>
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Sign In" :to="{ name: 'Sign In' }">
+        <sidenav-collapse navText="注册" :to="{ name: 'Sign In' }">
           <template #icon>
             <document />
           </template>
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Sign Up" :to="{ name: 'Sign Up' }">
+        <sidenav-collapse navText="登录" :to="{ name: 'Sign Up' }">
           <template #icon>
             <spaceship />
           </template>
         </sidenav-collapse>
       </li>
     </ul>
-  </div>
-  <div class="pt-3 mx-3 mt-3 sidenav-footer">
-    <sidenav-card
-      :class="cardBg"
-      textPrimary="Need Help?"
-      textSecondary="Please check our docs"
-      route="https://www.creative-tim.com/learning-lab/vue/overview/soft-ui-dashboard/"
-      label="Documentation"
-      icon="ni ni-diamond"
-    />
-    <a
-      class="btn bg-gradient-success mt-4 w-100"
-      href="https://www.creative-tim.com/product/vue-soft-ui-dashboard-pro?ref=vsud"
-      type="button"
-      >Upgrade to pro</a
-    >
   </div>
 </template>
 <script>
